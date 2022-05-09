@@ -5,6 +5,7 @@ import SignInScreen from './src/screens/SigninScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
 import MainFlow from './src/Navigators/BottomNavigators';
 import { Provider as AuthProvider } from './src/context/AuthContext';
+import { setNavigator } from './src/navigationRef';
 
 const Stack = createStackNavigator();
 
@@ -28,7 +29,7 @@ const App = () => {
 export default () => {
   return (
     <AuthProvider>
-      <App />
+      <App ref={( navigator ) => { setNavigator(navigator) }}/>
     </AuthProvider>
   );
 };

@@ -20,6 +20,7 @@
     "react-native": "0.68.1",
     "react-native-elements": "^4.0.0-rc.2",
     "react-native-gesture-handler": "~2.2.0",
+    "react-native-navigation-actions": "^1.0.4",
     "react-native-web": "0.17.7"
   },
   "devDependencies": {
